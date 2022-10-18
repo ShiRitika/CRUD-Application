@@ -1,0 +1,27 @@
+<!-- This project is based on express ,nodejs, mongodb. this project include CRUD opertation in it. 
+1. we had created a server.js file
+2. install packages by initializing npm (npm init) then i had installled:- 
+EXPRESS(a web framework for node to develop node appplication fastly robustly and asynchronised) ,
+MORGAN (to log a message everytime when we make a request) , 
+NODEMON (allow to run server automatically when we make a changes), 
+EJS (a template engione allow us to creatge a dynamic HTML) , 
+BODY_PARSER (it allow us to serialized the data and access the form data using body property) , 
+DOTENV (allow us to seperate the secret from the source code useful in collaborative environment where we do not want to share our credentials with other people),
+MONGOOSE (for connecting our nodejs project to mongoDM database) ,
+AXIOS (this library makes us easy to make a request in express application)
+
+open package.json and in start change ("node server.js")====> ("nodemon server.js") 
+now define stqructure of folder create:-
+folder inside crud_app named-assets(contain 3 folders fo css ,js,img these folder contains its own file).
+create a new folder views inside crud_app folder i had put all html files in view folder.
+views is a default folder for template engine in express
+create a new folder server inside crud_app folder inside this folder i will create my services , models , mongoDB connections and so on..
+inside server create a new folder controller and model , database, routes services
+now we set our modules path and then aseets after that we set our views folder by adding new file index.ejs for html content.
+
+add new file inside views as add-user.html 
+
+
+
+-->
+

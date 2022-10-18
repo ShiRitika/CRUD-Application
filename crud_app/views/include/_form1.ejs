@@ -1,0 +1,36 @@
+<!-- form handling -->
+<form action="/api/users" method="POST" id="add_user" onsubmit="return validateForm()">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="name" class="text-light">Name</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="name" id="input_name" value="" placeholder="name" />
+      <p id="invalid_name" class="error"></p>
+    </div>
+    <div class="form-group">
+      <label for="email" class="text-light">Email</label>
+      <input type="text" name="email" id="input_email" value="" placeholder="xyz@gmail.com" />
+      <p id="invalid_email" class="error"></p>
+    </div>
+    <div class="form-group">
+      <label for="gender" id="input_gender" class="text-light">Gender</label>
+      <div class="radio inline">
+        <input type="radio" id="radio-1" name="gender" value="Male" />
+        <label for="radio-1" class="radio-label">Male</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-2" name="gender" value="Female" />
+        <label for="radio-2" class="radio-label">Female</label>
+      </div>
+      <p id="invalid_gender" class="error"></p>
+    </div>
+    <div class="form-group">
+      <label for="city" class="text-light">City</label>
+      <input type="text" name="city" id="input_city" value="" placeholder="address" />
+      <p id="invalid_city" class="error"></p>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>
